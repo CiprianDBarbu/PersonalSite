@@ -1,0 +1,59 @@
+body
+{
+    background-image: url("/imagini/404.jpg");
+    background-size: cover;
+}
+
+header
+{
+    width:100%;    
+}
+
+header img
+{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2
+{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    text-align: center;
+    color:white;
+}
+
+p
+{
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color:white;
+}
+
+.buton_acasa
+{
+    display:inline-block;
+    margin-left:43%;
+    color:white;
+	text-decoration: none;
+	border-width:1px;
+	border-color: #e27e36;
+	border-style:solid;
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: background-color 0.3s;
+	transition: color 0.3s;
+}
+
+.buton_acasa:hover
+{
+    color:rgba(0,0,0,.95);
+	background-color: #e27e36;
+}

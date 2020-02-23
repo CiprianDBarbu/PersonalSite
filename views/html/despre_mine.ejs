@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name = "description" content = "Prezenetare personala">
+	<meta name = "keywords" content = "HTML"> <!--CSS si celalte in viitor -->
+	<meta name = "author" content = "Barbu Ciprian-Dragos">
+
+	<%- include ("../frag/head") %>
+
+	<link rel="stylesheet" type="text/css" href="css/despre_mine.css">
+
+	<title>Barbu Ciprian - Prezentare</title>
+</head>
+<body>
+	<header>
+		<%- include ("../frag/header") %>
+	</header>
+	<main>
+		<div class = "container_principal">
+			<img class = "wallpaper_principal" src = "imagini/despre/wallpaper_despre4.jpg" alt = "Wallpaper principal">
+			<div class = "after_wallpaper"></div>
+			<h1 class = "scris_titlu_principal">Hobby-uri &<br>Personalitate.</h1>
+		</div>
+		<section class = "sectiune_1">
+			<img src = "imagini/despre/wallpaper_despre.jpg" alt= "poza_intro">
+			<div>
+				<h2>Lucruri interesante despre mine</h2>
+				<p>
+				Cafeaua este bautura care ma motiveaza cel mai mult sa lucrez, am o pisica denumita Tasha, sunt un fan al jocurilor pe calculator, imi place sa calatoresc, am jucat baschet timp de 10 ani.
+				</p>
+			</div>
+		</section>
+		<section class = "sectiune_poze">
+			<div>
+				<img src = "imagini/despre/poze_galerie/galerie1.jpg" alt = "Poza1">
+				<img  src = "imagini/despre/poze_galerie/galerie2.jpg" alt = "Poza2">
+				<img  src = "imagini/despre/poze_galerie/galerie3.jpg" alt = "Poza3">
+				<img  src = "imagini/despre/poze_galerie/galerie4.jpg" alt = "Poza4">
+				<img src = "imagini/despre/poze_galerie/galerie5.jpg" alt = "Poza5">
+				<img src = "imagini/despre/poze_galerie/galerie6.jpg" alt = "Poza6">
+			</div>
+		</section>	
+		<section class = "sectiune_2">
+			<div>
+				<h2>Imi place sa calatoresc</h2>
+				<img class = "poza_1" src = "imagini/despre/wallpaper_calatorii.jpg" alt = "Poza Vf.Ciucas">
+				<p>
+					Sunt o persoana careia ii place foarte mult sa se plimbe. 
+					Nu exista an in care sa nu visitez o noua tara sau in care sa nu fac cel putin un traseu montan. Mi se pare interesant sa vad cum traiesc oamenii din afara tarii pentru a putea compara dupa cu viata noastra. Este o experienta deosebita sa comunici cu oameni din diferite parti ale lumii si sa vezi alte mentalitati, diferite fata de cele cu care esti obisnuit. 
+				</p>
+			</div>
+		</section>
+		<section class = "sectiune_3">
+			<img src = "imagini/despre/basket_wallpaper.jpg" alt = "Poza baschet">
+			<div>
+				<h2>Interesat de baschet</h2>
+				<p>
+					Inca din scoala generala mi s-a parut interesant baschetul. Mi s-a parut un sport putin mai special decat clasicul fotbal, asa ca am inceput sa ma duc la antrenamentele scolii. Incet incet am evoluat, ajungand inainte de facultate sa merg cu echipa liceului la competitii.
+				</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<%- include ("../frag/footer") %>
+	</footer>
+</body>
+</html>

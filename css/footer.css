@@ -1,0 +1,52 @@
+footer
+{
+	background-color: rgb(30,30,30);
+	width: 100%;
+	display: inline-block;
+	
+}
+
+footer h2
+{
+	color:white;
+	text-align: center;
+	font-size: 50px;
+}
+
+.meniu_footer
+{
+	text-align:center;
+	width: 100%;
+}
+
+.meniu_footer a
+{
+	display:inline-block;
+	text-decoration: none;
+	color:white;
+	padding:5%;
+	font-size: 20px;
+	transition: color 0.3s;
+}
+
+.meniu_footer a:hover
+{
+	color:#A6A6A6;
+}
+
+.buton_sus
+{
+	position: relative;
+	bottom: 20px;
+	left: 20px;
+	color:white;
+	text-decoration: none;
+	font-size: 30px;
+	padding-bottom: 20px;
+	transition: color 0.3s;
+}
+
+.buton_sus:hover
+{
+	color:#A6A6A6;
+}

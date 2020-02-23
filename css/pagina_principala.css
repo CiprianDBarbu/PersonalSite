@@ -1,0 +1,333 @@
+body
+{
+	width: 100%;
+	padding:0;
+	margin:0;
+	display: block;
+	/*background-color:rgba(245,245,245,0.4);*/
+	background-color: rgba(0,0,0,0.95);
+	}
+
+.container_principal
+{
+	position:relative;
+	text-align: center;
+	width:100%;
+	height: 50%;
+	overflow: hidden;
+}
+
+.wallpaper_principal
+{
+	display: block;
+	width: 100%;
+	margin-bottom:-3%;
+	margin-top:-18%;
+}
+
+
+.container_principal .after_wallpaper
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    color: #FFF;
+}
+
+.container_principal .after_wallpaper
+{
+	display:block;
+	background-color: rgba(0,0,0,.3);
+}
+
+.scris_titlu_principal
+{
+	position:absolute;
+	top:13%;
+	left:5%;
+	color:white;
+	font-size:7.51vw;
+}
+
+.poza_pagina
+{
+	max-width:500px;
+	max-height: 250px;
+}
+
+
+.sectiune_1
+{
+	box-sizing: border-box;
+	display: inline-block;
+	position: relative;
+	height: 500px;
+	width: 100%;
+	padding: 30px;
+	background-color:#F0F0F0;
+}
+
+.sectiune_1 img
+{
+	position: absolute;
+	top:20%;
+	left: 5%;
+	width: 40%;
+	height: auto;
+	float:left;
+	animation: move_1 3s 1;
+}
+
+@keyframes move_1
+{
+	from{left:0;
+		opacity: 0;}
+	
+}
+
+.sectiune_1 div
+{
+	position: absolute;
+	top:20%;
+	left: 50%;
+	width: 40%;
+	text-align: center;
+}
+
+.sectiune_1 div h2
+{
+	font-size: 40px;
+}
+
+.sectiune_1 div p
+{
+	text-align: left;
+	padding-left: 5%;
+	margin: 10px;
+	line-height: 32px;
+	font-size:20px;
+	animation: mymove 3s 1;
+}
+
+@keyframes mymove
+{
+	from{opacity: 0;}
+}
+
+.sectiune_2
+{
+	box-sizing: border-box;
+	display: inline-block;
+	text-align: center;
+	position: relative;
+	height: 500px;
+	width: 100%;
+	margin-bottom: 80px;
+	padding: 30px;
+	color:white;
+}
+
+.sectiune_2 h2
+{
+	font-size: 40px;
+	color:#e27e36;
+	font-variant:small-caps;
+}
+
+.sectiune_2 p
+{
+	text-align: center;
+	line-height: 32px;
+	font-size:20px;
+	padding: 20px;
+}
+
+.sectiune_2 img
+{
+	width: 70%;
+	height: auto;
+}
+.sectiune_3
+{
+	box-sizing: border-box;
+	display: inline-block;
+	background-color: white;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	padding: 30px;
+	background-position: top;
+	background-color:#F0F0F0;
+}
+
+.sectiune_3 img
+{
+	position: absolute;
+	top:15%;
+	left: 10%;
+	width: 35%;
+	height: auto;
+	float:left;
+}
+
+.sectiune_3 div
+{
+	position: absolute;
+	top:20%;
+	left: 50%;
+	width: 40%;
+	text-align: center;
+	
+}
+
+.sectiune_3 div h2
+{
+	font-size: 40px;
+}
+
+.sectiune_3 div p
+{
+	text-align: left;
+	padding-left: 5%;
+	margin: 10px;
+	line-height: 32px;
+	font-size:20px;
+}
+
+.sectiune_3 .buton_2
+{
+	position: absolute;
+	bottom: 13%;
+	left:42%;
+}
+
+.buton_1
+{
+	color:white;
+	text-decoration: none;
+	border-width:1px;
+	border-color: #e27e36;
+	border-style:solid;
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: background-color 0.3s;
+	transition: color 0.3s;
+}
+
+.buton_1:hover
+{
+	color:rgba(0,0,0,.95);
+	background-color: #e27e36;
+}
+
+.buton_2
+{
+	color:rgba(0,0,0,.95);
+	text-decoration: none;
+	border-width:1px;
+	border-color: #e27e36;
+	border-style:solid;
+	padding: 15px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: background-color 0.3s;
+	transition: color 0.3s;
+}
+
+.buton_2:hover
+{
+	color:#e27e36;
+	background-color:rgba(0,0,0,.95);
+	border-color:rgba(0,0,0,.95);
+}
+
+
+@media screen and (max-width: 426px)
+{
+
+	.sectiune_1
+	{
+		height: 650px;
+	}
+
+	.sectiune_1 div
+	{
+		margin:auto;
+	}
+
+	.sectiune_1 div h2,.sectiune_2 div h2,.sectiune_3 div h2
+	{
+		font-size: 30px;
+	}
+
+	.sectiune_1 div p
+	{
+		text-align: center;
+		font-size: 18px;
+		padding:10px;
+		margin: auto;
+	}
+
+	.sectiune_1 img, .sectiune_3 img
+	{
+		width: 90%;
+		top:5%;
+		left:5%;
+		height: auto;
+	}
+
+	.sectiune_2 div p,.sectiune_3 div p
+	{
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.sectiune_1 div, .sectiune_3 div
+	{
+		width: 90%;
+		top:40%;
+		left: 5%;
+	}
+
+	.sectiune_3 div
+	{
+		top:45%;
+	}
+
+	.sectiune_3 .buton_2
+	{
+		left:20%;
+	}
+}
+
+@media screen and (min-width: 450px) and (max-width: 800px)
+{
+	.sectiune_1 div
+	{
+	top:10%;
+	}
+	
+	.sectiune_1 img
+	{
+		top:35%;
+	}
+
+	.sectiune_3
+	{
+		height: 550px;
+	}
+
+	.sectiune_3 img
+	{
+		top:25%;
+	}
+
+	.sectiune_3 .buton_2
+	{
+		left:37%;
+	}
+}

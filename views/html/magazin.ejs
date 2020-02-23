@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "description" content = "Magazin personal">
+	<meta name = "keywords" content = "Magazin">
+	<meta name = "author" content = "Barbu Ciprian-Dragos">
+	<meta name = "viewport" content="width=device-width,initial-scale=1.0">
+
+	<%- include ("../frag/head") %>
+
+	<link rel="stylesheet" type="text/css" href="css/magazin.css">
+	
+	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=5DuGqdvnQwUJRp4MVU90isg1VSVcTKHzsFJxXsl3mjLMkKpvsXRMxcFZcn5jxbDi5r5cFr10pz1cCz1zZ3obqCFavh19uhpE-JjGyDQRFUMvXGE4FhToCZkh1DGiQWiqVPwy43a9riZWZuBZbm0glg" charset="UTF-8"></script>
+	<script src="imagini/magazin/magazin.js"></script>
+
+	<title>Magazin</title>
+</head>
+<body>
+    <header>
+		<%- include ("../frag/header") %>
+    </header>
+    <main>
+        <div class="container_principal">
+			<img class = "wallpaper_principal" src = "imagini/magazin/shop-wallpaper.jpg" alt = "poza prezentare">
+			<div class = "after_wallpaper"></div>
+			<h1 class = "scris_titlu_principal">Magazin<br>Personal</h1>
+		</div>
+
+		<div id = "container">
+			<!--img id = "animatie" src = "https://freesvg.org/img/1298512738.png"-->
+			<p id = "animatie">Bine ai venit!</p>
+		</div>
+
+		<% if(locals.user){ %>
+			<p class="salut">Salut, <%= user.prenume %><br>Bun venit la magazinul meu!</p>
+		<% } %>
+		<div id = "ora"></div>
+		<a id = "logout" href="/logout">Logout</a>
+
+		<div id = "tema">
+			<button id = "tem">TEMA</button>
+		</div>
+
+		<div id = "unelte">
+			<button>UNELTE CAUTARE</button>
+			<button id = "reset">RESET</button>
+		</div>
+
+	<!--
+		<div id = "servicii">
+			<h2>SERVICII</h2>
+			<div class = "produs_magazin">
+				<p>Pregatire Personala</p>
+				<p>30 lei / ora</p>
+				<p>5/5</p>
+			</div>
+			<div class = "produs_magazin">
+				<p>Pregatire Atestate</p>
+				<p>150 lei / proiect</p>
+				<p>4.5/5</p>
+			</div>
+		</div>
+		<div id = "produse">
+			<h2>PRODUSE</h2>
+			<div class = "produs_magazin">
+				<p>Breloc</p>
+				<p>20 lei</p>
+				<p>3/5</p>
+			</div>
+			<div class = "produs_magazin">
+				<p>Bratara</p>
+				<p>15 lei</p>
+				<p>4.5/5</p>
+			</div>
+			<div class = "produs_magazin">
+				<p>Pix</p>
+				<p>40 lei</p>
+				<p>4/5</p>
+			</div>
+		</div>
+	-->
+	<h2>SERVICII / PRODUSE</h2>
+	<div id = "serv">
+		<% for (var i = 0; i < produse.length; i++) { %>
+			<%- include ("../frag/template",{produse:produse[i]}) %>
+		<% } %>
+	</div>
+
+	<h2>COS CUMPARATURI</h2>
+	<div id = "cos">
+
+	</div>
+
+	<a id = "review" href = "/review">Lasa un review site.ului</a>
+    </main>
+    <footer>
+		<%- include ("../frag/footer") %>
+	</footer>
+
+</body>

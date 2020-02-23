@@ -1,0 +1,50 @@
+body
+{
+    background-image: url("/imagini/login.jpg");
+    background-size: cover;
+    color:white;
+}
+
+header
+{
+    width:100%;    
+}
+
+header img
+{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2
+{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    font-size:4vw;
+    text-align: center;
+    color:white;
+}
+
+
+p
+{
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size: 2vw;
+    color:white;
+}
+
+#rasp
+{
+    font-size: 20px;
+    color : "white";
+}
+
+
+textarea
+{
+    left:300px;
+}

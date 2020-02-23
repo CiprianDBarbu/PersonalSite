@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+	<meta name = "description" content = "Eroare"/>
+	<meta name = "keywords" content = "Eroare"/>
+	<meta name = "author" content = "Barbu Ciprian-Dragos"/>
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0"/>
+    
+    <link rel="stylesheet" type="text/css" href="/css/login.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon.ico"/>
+
+	<title>Barbu Ciprian</title>
+</head>
+<body>
+    <header>
+		<a href = "/"><img src = "/imagini/B_C.png" alt = "Logo"></a>
+    </header>
+    <main>
+        <p>Va rugam sa va logati: <br/> </p>
+
+            <form id="login" method="post" action="/login" >
+                <label>
+                    eMail: <input type="text" name="mail" value="email@aabbcc.com"><br>
+                </label>
+                <label>
+                    Parola: <input type="password" name="parola" value="_____"><br>
+                </label>
+                
+                <input type="submit" value="Submit">
+        <p>Nu ai cont?</p>
+        <a id = "inregistrare" href = "/inregistrare">INREGISTREAZA-TE</a>
+            </form>
+    </main>
+</body>

@@ -1,0 +1,35 @@
+{
+    "lastId": 5,
+    "produse": [
+        {
+            "id": 1,
+            "nume": "Pregatire Personala",
+            "pret": "30",
+            "popularitate": "5"
+        },
+        {
+            "id": 2,
+            "nume": "Pregatire Atestate",
+            "pret": "150",
+            "popularitate": "4.5"
+        },
+        {
+            "id": 3,
+            "nume": "Breloc",
+            "pret": "20",
+            "popularitate": "3"
+        },
+        {
+            "id": 4,
+            "nume": "Bratara",
+            "pret": "15",
+            "popularitate": "4.5"
+        },
+        {
+            "id": 5,
+            "nume": "Pix",
+            "pret": "40",
+            "popularitate": "4"
+        }
+    ]
+}

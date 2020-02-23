@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name = "description" content = "Prezenetare personala"/>
+	<meta name = "keywords" content = "Barbu"/>
+	<meta name = "author" content = "Barbu Ciprian-Dragos"/>
+	<meta name = "viewport" content="width=device-width,initial-scale=1.0"/>
+
+	<%- include ("../frag/head") %>
+	
+	<link rel="stylesheet" type="text/css" href="/css/pagina_principala.css"/>
+
+	<title>Barbu Ciprian</title>
+</head>
+<body>
+	<header>
+		<%- include ("../frag/header") %>
+	</header>
+	<main>
+		<div class="container_principal">
+			<img class = "wallpaper_principal" src = "/imagini/pagina_principala/wallpaper_pagina_principala.jpg" alt = "poza prezentare">
+			<div class = "after_wallpaper"></div>
+			<h1 class = "scris_titlu_principal">Barbu<br>Ciprian</h1>
+		</div>
+		<section class = "sectiune_1">
+			<img src = "/imagini/pagina_principala/poza_univ.jpg" alt = "Poza Univeristate">
+			<div>
+				<h2>Student.</h2>
+				<p>
+					In prezent studiez la <abbr title = "Universitatea din Bucuresti"><a href = "http://fmi.unibuc.ro/" target = "_blank">UNIBUC</a></abbr> sectia <strong>Informatica</strong> in anul II.<br>Am intrat in anul 2018, dupa 4 ani in care am studiat C/C++ la <strong>Colegiul National Ion Luca Caragiale</strong> din Bucuresti pe profilul Matematica-Informatica, intensiv Informatica.
+				</p>
+			</div>
+		</section>
+		<section class = "sectiune_2">
+			<div>
+				<h2>Pasionat.</h2>
+				<img class = "poza_pagina" src = "/imagini/pagina_principala/poza_proiecte.jpg" alt = "Poza proiecte">
+				<p>
+				Am lucrat in diferite proiecte de-a lungul timpului, fiecare diferit in felul sau.
+				</p>
+				<a class = "buton_1" href = "/proiecte" target = "_parent">AFLA MAI MULTE →</a>
+			</div>
+		</section>
+		<section class = "sectiune_3">
+			<img src = "/imagini/pagina_principala/img1.jpg" alt = "Poza prezentare">
+			<div>
+				<h2>Complex</h2>
+				<p>Joc baschet din clasa a III-a, calatoresc si imi place sa fac trasee montane de fiecare data cand pot.</p>
+			</div>
+			<a class = "buton_2" href = "/prezentare" target = "_parent">VEZI MAI MULTE →</a> 
+		</section>
+	</main>
+	<footer>
+		<%- include ("../frag/footer") %>
+	</footer>
+</body>
+</html>

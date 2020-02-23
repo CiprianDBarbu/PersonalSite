@@ -1,0 +1,69 @@
+body
+{
+    background-image: url("/imagini/login.jpg");
+    background-size: cover;
+}
+
+header
+{
+    width:100%;    
+}
+
+header img
+{
+    display: block;
+    height: 100px;
+    width: 100px;
+    margin-top:50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2
+{
+    font-family: "Arial Black", Gadget, sans-serif;
+    font-weight: bold;
+    font-size: 6vw;
+    text-align: center;
+    color:white;
+}
+
+form
+{
+    text-align:center;
+}
+
+p,label
+{
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    color:white;
+}
+
+input[type = "submit"]
+{
+    display:inline-block;
+    margin-top:10px;
+	border-width:1px;
+	border-color: #e27e36;
+	border-style:solid;
+	padding: 10px;
+	padding-left: 40px;
+	padding-right: 40px;
+	transition: background-color 0.3s;
+	transition: color 0.3s;
+}
+
+input[type = "submit"]:hover
+{
+    color:rgba(0,0,0,.95);
+	background-color: #e27e36;
+}
+
+#inregistrare
+{
+    font-size: 20px;
+    text-decoration: none;
+    color:#e27e36;
+}

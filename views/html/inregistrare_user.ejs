@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+	<meta name = "description" content = "Eroare"/>
+	<meta name = "keywords" content = "Eroare"/>
+	<meta name = "author" content = "Barbu Ciprian-Dragos"/>
+    <meta name = "viewport" content="width=device-width,initial-scale=1.0"/>
+    
+    <link rel="stylesheet" type="text/css" href="/css/inregistrare_user.css"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/imagini/favicon.ico"/>
+
+	<title>Barbu Ciprian</title>
+</head>
+<body>
+    <header>
+		<a href = "/"><img src = "/imagini/B_C.png" alt = "Logo"></a>
+    </header>
+    <main>
+		<% if(!locals.rsstatus) { %>
+        <form class="date" method="post" enctype="multipart/form-data">
+			<p>
+			<label>
+				Nume: <input type="text" name="nume" value="Doe">
+			</label>
+			</p>
+			<p>
+			<label>
+				Prenume: <input type="text" name="prenume" value="John">
+			</label>
+			</p>
+			<p>
+			<label>
+				Parola: <input type="password" name="parola" value="pass">
+			</label>
+			</p>
+			<p>
+			<label>
+				Mail: <input type="text" name="mail" value="abc@yahoo.com">
+			</label>
+			</p>
+						
+			<input type="submit" value="Submit">
+			</p>
+		</form>
+		<% } else if(rsstatus=="ok"){ %>
+			<p>Date introduse</p>
+		<% } else {%>
+			<p>Eroare</p>
+		<% } %>
+    </main>
+</body>

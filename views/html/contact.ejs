@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang = "ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name = "description" content = "Prezenetare personala">
+	<meta name = "keywords" content = "HTML"> <!--CSS si celalte in viitor -->
+	<meta name = "author" content = "Barbu Ciprian-Dragos">
+	<meta name = "viewport" content="width=device-width,initial-scale=1.0">
+
+	<%- include ("../frag/head") %>
+
+	<link rel = "stylesheet" type = "text/css" href = "css/contact.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+  		$("#ascunde").click(function(){
+    		$(".gmap_canvas").hide();
+  		});
+  	$("#arata").click(function(){
+    		$(".gmap_canvas").show();
+  		});
+	});
+</script>
+
+	<title>Barbu Ciprian - Contact</title>
+</head>
+<body>
+	<header>
+		<%- include ("../frag/header") %>
+	</header>
+	<main>
+		<section class="sectiune_1">
+			<h1>Contact.</h1>
+			<div>
+				<p>Da-mi un email la adresa:<a href = "mailto:barbu.ciprian.dragos@gmail.com">barbu.ciprian.dragos@gmail.com</a></p>
+				<p>Sau suna direct la:<a href = "tel:+40726692364">+40726692364</a></p>
+			</div>
+		</section>
+	<aside>
+			<p>Arata / Ascunde harta:</p>
+			<button id="ascunde">Ascunde</button>
+			<button id="arata">Arata</button>
+	</aside>
+	<section class = "harta">
+		<div class="mapouter">
+			<div class="gmap_canvas">
+				<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bucharest%20calea%20vacaresti&t=&z=13&ie=UTF8&iwloc=&output=embed" ></iframe>
+			</div>
+		</div>
+    </section>
+	</main>
+	<footer>
+		<div class="meniu_footer">
+			<a href = "/" target = "_parent">ACASA</a>
+			<a href = "/proiecte" target="_parent">PROIECTE</a>
+			<a href = "/prezentare" target="_parent">PREZENTARE</a>
+			<a href = "/cv" target="_parent">CV</a>
+		</div>
+	</footer>
+</body>
+</html>
